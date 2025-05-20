@@ -7,7 +7,7 @@ function Left () {
     )
     RoboticsWorkshop.DDMmotor(
     AnalogPin.P14,
-    200,
+    255,
     DigitalPin.P13,
     1
     )
@@ -79,7 +79,7 @@ function HandDown () {
     )
 }
 radio.onReceivedValue(function (name, value) {
-    if (value == -1818915119) {
+    if (0 == 0) {
         if (name == "Forward") {
             Forward()
         } else if (name == "Forback") {
@@ -142,6 +142,3 @@ function Stop () {
     )
 }
 radio.setGroup(1)
-basic.forever(function () {
-	
-})
